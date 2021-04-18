@@ -446,18 +446,17 @@ var pll = {
 "2": ["x' R U' R' D R U R' D' R U R' D R U' R' D' x", "R' U R' U' y R' F' R2 U' R' U R' F R F", "F R U' R' U' R U R' F' R U R' U' R' F R F'", "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'", "R' U R U' R' F' U' F R U R' F R' F' R U' R"],
 "3": ["U' x R' U R' D2 R U' R' D2 R2 x'", "x R2 D2 R U R' D2 R U' R x'", "U L U2 L' U2 L F' L' U' L U L F L2", "U R' U2 R U2 R' F R U R' U' R' F' R2", "L' U' L F L' U' L U L F' L2 U L", "U2 R U R' F' R U R' U' R' F R2 U' R'", "U2 R U R' U' R' F R2 U' R' U' R U R' F'", "U2 R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R", "U2 R2 u R' U R' U' R u' R2 y' R' U R", "U2 R' U' R y R2 u R' U R U' R u' R2", "U2 R2 u' R U' R U R' u R2 y R U' R'", "U2 R U R' y' R2 u' R U' R' U R' u R2"],
 };
-var oll0 = {
-	"i": pll["1"]
+var TUL = {
 };
-/*var olls = {oll31: 31, oll32: 32, oll43: 43, oll44: 44, oll36: 36, oll38: 38, oll34: 34, oll46: 46, oll33: 33, oll45: 45, oll39: 39, oll40: 40, oll35: 35, oll37: 37, oll29: 29, oll30: 30, oll41: 41, oll42: 42};
-foreach (var oll in olls) {
-	for (var i = 1; i < 7; i++) {
-		oll0[olls[oll].toString() + ", " + i.toString()] = oll[i.toString()];
+var olls = {29: oll29, 30: oll30, 31: oll31, 32: oll32, 33: oll33, 34: oll34, 35: oll35, 36: oll36, 37: oll37, 38: oll38, 39: oll39, 40: oll40, 41: oll41, 42: oll42, 43: oll43, 44: oll44, 45: oll45, 46: oll46};
+for (var i = 29; i < 47; i++) {
+	for (var j = 1; j < 7; j++) {
+		TUL[i.toString() + ", " + j.toString()] = olls[i][j.toString()];
 	}
-}*/
+}
 
 window.algs = {
-"2e2c":oll0,
+"2e2c":TUL,
 "OLL 1":oll1,
 "OLL 2":oll2,
 "OLL 3":oll3,
